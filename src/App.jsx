@@ -7,7 +7,7 @@ import CardContext from "./Context/CardContext";
 import CardDispatchContext from "./context/CardDispatchContext";
 
 function App() {
-  // const [cards, setCards] = useState(CardDB);
+  
   const [editablecard, seteditablecard] = useState(null);
   const [cards, dispatch] = useReducer(cardReducer, CardDB);
 
@@ -51,7 +51,6 @@ function App() {
 
             <div className="container mx-auto">
               <CardList
-              
                 editCard={editCard}
                 className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 bg-white rounded-lg shadow-md"
               />

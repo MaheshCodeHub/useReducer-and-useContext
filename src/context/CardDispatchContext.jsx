@@ -1,6 +1,5 @@
 import { createContext } from "react";
 
+const CardDispatchContext = createContext(null);
 
-   const CardDispatchContext=createContext(null);
-
-   export default CardDispatchContext;
+export default CardDispatchContext;
